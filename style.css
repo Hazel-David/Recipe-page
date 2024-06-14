@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: hsl(30, 54%, 90%);
+    font-family: outfit;
+    padding: 3em;
+    display: grid;
+    place-content: center;
+}
+.recipe-container{
+    width: 35vw;
+    padding: 2em;
+    line-height: 2em;
+    background-color: hsl(0, 0%, 100%);
+    margin-bottom: 20px;
+    border-radius: 1em;
+    
+}
+.ingredients-header, .nutrition-header, .instructions-header{
+    color: hsl(14, 45%, 36%);
+}
+.preparation-time-header{
+    color: hsl(332, 51%, 32%);
+}
+.bold{
+    font-weight: 700;
+}
+li::marker{
+    color: hsl(14, 45%, 36%);
+    font-weight: bolder;
+    font-size: 1rem;
+    
+}
+li{
+    padding-left: 8px;
+}
+img{
+    width: 35vw;
+    margin-bottom: 2em;
+    border-radius: 1em;
+}
+table{
+    border-collapse: collapse;
+    margin-left: 2.5em;
+    
+    width: 90%;
+}
+tr{
+    border-bottom: 1px solid lightgrey;
+    
+}
+tr:nth-last-of-type(1){
+    border-bottom: none;
+}
+td:nth-child(even){
+    color: hsl(14, 45%, 36%);
+    font-weight: bolder;
+}
+.instructions, .ingredients, .preparation-time{
+    margin-left: 1.7em;
+}
+td{
+    padding: 10px;
+}
+hr{
+    margin-top: 25px;
+    margin-bottom: 25px;
+    background-color: lightgrey;
+    height: 0.5px;
+}
+
+div[class*="omelette-preparation-time"]{
+    background-color: hsl(330, 100%, 98%);
+    padding: 1.5em;
+    border-radius: 8px;
+    margin-bottom: 1em;
+}
+.omelette-recipe-intro{
+    margin-bottom: 1em;
+}
+.omelette-recipe-description{
+    margin-top: 1em;
+}
+
